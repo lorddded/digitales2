@@ -1,0 +1,50 @@
+[PROJECT]
+Target=proyecto2.hex
+Processor_Text=PIC16F887
+CCSVersion=5.076
+Compiler=PCM
+[Target Data]
+FileList=proyecto2.c
+[proyecto2.c]
+Type=4
+[mru-list]
+1=proyecto2.c
+
+[defines]
+buildcount=58
+
+[Opened Files]
+1=proyecto2.c
+t1=1
+Count=1
+
+[ProjectLog]
+Days=3
+D1=22-03-2021
+D1_L=8
+D1_L1=[69809]Stopped Editing.
+D1_L2=[70100]Started Editing.
+D1_L3=[70574]Stopped Editing.
+D1_L4=[70612]Started Editing.
+D1_L5=[73762]Stopped Editing.
+TotalEdit=75
+TotalDebug=0
+D1_E=75
+D1_D=0
+D1_L6=[73762]Project Closed.
+D1_L7=[73786]Project Opened.
+D1_L8=[73863]Project Closed.
+D2=23-03-2021
+D2_L=2
+D2_L1=[32947]Project Opened.
+D2_L2=[38445]Project Closed.
+D3=05-04-2021
+D3_L=2
+D3_L1=[26485]Project Opened.
+D3_L2=[26548]Project Closed.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=proyecto2 (main)

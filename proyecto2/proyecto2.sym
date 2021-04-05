@@ -1,0 +1,231 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+005     PORTA
+006     lcd
+006     PORTB
+006     lcdlat
+006     kbd
+007     PORTC
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     kbd_getc.kbd_call_count
+021.0   kbd_getc.kbd_down
+022     kbd_getc.last_key
+023     kbd_getc.col
+024     CONTADOR
+025     T
+026     CONT
+027     K
+028     MIL
+029     CEN
+02A     DEC
+02B     UNI
+02C     VAL
+02D-02E contra
+02F     sinal
+030-031 @sprintf_string
+032     @TRIS_C
+033-034 MAIN.m
+035-036 MAIN.c
+037-038 MAIN.d
+039-03A MAIN.u
+03B     MAIN.m1
+03C     MAIN.c1
+03D     MAIN.d1
+03E     MAIN.u1
+03F-040 MAIN.bits
+041-044 MAIN.tem
+045-046 @ITOF.P1
+045     @PSTRINGCN7_670.P2
+045-048 @FLT.P3
+045     cambio_clave.bandera
+045     lcd_init.i
+045-048 @PRINTF_L32D_670FPFPF.P1
+045     MAIN.@SCRATCH1
+046-047 cambio_clave.clave
+046-049 lcd_init.LCD_INIT_STRING
+046     MAIN.@SCRATCH2
+046     @PSTRINGCN7_670.@SCRATCH1
+047     @PSTRINGCN7_670.@SCRATCH2
+048-049 cambio_clave.m
+048     @PSTRINGCN7_670.@SCRATCH3
+049-04C @FLT.P1
+049     @PRINTF_L32D_670FPFPF.P2
+049     @PSTRINGCN7_670.@SCRATCH4
+04A-04B cambio_clave.c
+04A     lcd_init.@SCRATCH1
+04A     @PRINTF_L32D_670FPFPF.@SCRATCH1
+04B     @PRINTF_L32D_670FPFPF.@SCRATCH2
+04C-04D cambio_clave.d
+04C     @PRINTF_L32D_670FPFPF.@SCRATCH3
+04D     @PRINTF_L32D_670FPFPF.@SCRATCH4
+04D     @FLT.@SCRATCH1
+04E-04F cambio_clave.u
+04E     @PRINTF_L32D_670FPFPF.@SCRATCH5
+04E     @FLT.@SCRATCH2
+04F     @PRINTF_L32D_670FPFPF.@SCRATCH6
+050     kbd_getc.kchar
+050-051 validar_clave.clave
+050     cambio_clave.@SCRATCH1
+050     @PSTRINGC7_670.@SCRATCH1
+050     @PRINTF_L32D_670FPFPF.@SCRATCH7
+051     kbd_getc.row
+051     cambio_clave.@SCRATCH2
+051     @PSTRINGC7_670.@SCRATCH2
+051     @PRINTF_L32D_670FPFPF.@SCRATCH8
+052-055 @DIV3232.P1
+052-053 validar_clave.m
+052-055 @FTOSD.P1
+052-055 @MULFF.P2
+052     kbd_getc.@SCRATCH1
+052     @PSTRINGC7_670.@SCRATCH3
+053     lcd_putc.c
+053     @PSTRINGC7_670.@SCRATCH4
+054-055 validar_clave.c
+054     lcd_gotoxy.x
+054     @delay_ms1.P1
+055     lcd_gotoxy.y
+056-059 @MULFF.P1
+056     lcd_gotoxy.address
+056-057 validar_clave.d
+056-059 @DIV3232.P1
+056     @FTOSD.@SCRATCH1
+057     lcd_gotoxy.@SCRATCH1
+058     lcd_send_byte.address
+058-059 validar_clave.u
+059     lcd_send_byte.n
+05A     @MUL88.P1
+05A     lcd_read_byte.low
+05A     lcd_send_byte.@SCRATCH1
+05A     validar_clave.@SCRATCH1
+05A     @MULFF.@SCRATCH1
+05A     @DIV3232.@SCRATCH1
+05B     lcd_read_byte.high
+05B     @MUL88.P1
+05B     lcd_send_nibble.n
+05B     validar_clave.@SCRATCH2
+05B     @MULFF.@SCRATCH2
+05B     @DIV3232.@SCRATCH2
+05C-05D @MUL1616.P1
+05C     lcd_read_byte.@SCRATCH1
+05C     @MULFF.@SCRATCH3
+05C     @DIV3232.@SCRATCH3
+05D     @MULFF.@SCRATCH4
+05D     @DIV3232.@SCRATCH4
+05E-05F @MUL1616.P1
+05E     @MULFF.@SCRATCH5
+05E     @DIV3232.@SCRATCH5
+060     @MUL1616.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+086     lcdtris
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  KEYS.call
+000008  KEYS.data
+000014  DISPLAY.call
+000018  DISPLAY.data
+000022  HORARIO.call
+000026  HORARIO.data
+000036  HORARIO.call
+00003A  HORARIO.data
+000044  @const733.call
+000045  @const738.call
+00004C  @const739.call
+00004D  @const740.call
+000054  @const741.call
+000055  @const742.call
+00005E  @const743.call
+00005F  @const756.call
+000060  @const757.call
+000068  @const758.call
+000069  @const759.call
+000072  @const760.call
+000073  @const761.call
+00007C  @const762.call
+00007D  @const763.call
+00008D  @const774.call
+00009D  @const775.call
+00009E  @const781.call
+0000A6  @const782.call
+0000AD  @const797.call
+0000B5  @const798.call
+0000BC  @const799.call
+0000BD  @const800.call
+0000C6  @const801.call
+0000C7  @delay_ms1
+0000DC  lcd_send_nibble
+0000E8  lcd_read_nibble
+0000EE  lcd_send_byte
+0000F4  lcd_read_byte
+00012E  lcd_init
+00016A  kbd_init
+00016D  @MUL1616
+000182  @MUL88
+0001A7  lcd_gotoxy
+0001B9  lcd_putc
+0001E5  @PSTRINGC7_670
+00023B  kbd_getc
+0002A0  TECLADO
+0002E8  pedir_clave
+000341  validar_clave
+000394  cambio_clave
+0004E7  @PSTRINGCN7_670
+00053E  @ITOF
+00055D  @MULFF
+0005D2  @DIV3232
+000621  @PRINTF_L32D_670FPFPF
+000648  @FTOSD
+000701  @FLT
+000800  MAIN
+000800  @cinit1
+00081A  @cinit2
+
+Project Directory:
+    C:\Users\User\Desktop\protec\proyecto2\
+
+Project Files:
+    proyecto2.c                                             [22-mar.-21 20:29  CRC=01BEA59E]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [15-ene.-18 15:53  CRC=9C71CB72]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\LCD.C   [22-feb.-16 09:05  CRC=D1A6378A]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\KBD.C   [25-may.-15 21:33  CRC=7C81F56B]
+
+Source signature=68DA9370
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=582D
+
+Units:
+    proyecto2 (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   proyecto2.xsym
+    Errors:      proyecto2.err
+    Ext Symbols: proyecto2.esym
+    INHX8:       proyecto2.hex
+    Symbols:     proyecto2.sym
+    List:        proyecto2.lst
+    Debug/COFF:  proyecto2.cof
+    Project:     proyecto2.ccspjt
+    Call Tree:   proyecto2.tre
+    Statistics:  proyecto2.STA

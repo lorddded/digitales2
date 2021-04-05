@@ -1,0 +1,9 @@
+Compiling C:\Users\User\Desktop\protec\proyecto2\proyecto2 on 22-mar.-21 at 20:29
+>>> Warning 237 "proyecto2.c" Line 298(34,35): Extra comma
+>>> Warning 237 "proyecto2.c" Line 336(37,38): Extra comma
+>>> Warning 207 "proyecto2.c" Line 360(1,1): Code has no effect
+>>> Warning 237 "proyecto2.c" Line 410(37,38): Extra comma
+>>> Warning 207 "proyecto2.c" Line 443(22,23): Code has no effect
+      Memory usage:   ROM=34%      RAM=12% - 19%
+      0 Errors,  5 Warnings.
+Build Successful.
